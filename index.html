@@ -2,133 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width initial-scale=1.0"
-    <title> Friday live coding</title>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.scss"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,100;1,500;1,700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./photo.ico">
+    <title>CV</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper"> <a href="#">Logo</a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>About</li>
-                    <li>Product</li>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English </a></li>
                 </ul>
-            </nav>
-            <div class="header__buttons">
-                <button class="button button_bordered">Sign in</button>
-                <button class="button button_colored">Sign up</button>
-            </div>
-        </div>  
+              </nav>
+        </div>
     </header>
-    <section class="promo">
-        <div class="wrapper">
-            <div class="promo__connent">
-                <h1> The Design Thinking Superpowers</h1>
-                <p>
-                    Tools, tutorials, design and innovation experts, all in one place!</p>
-                <div>
-                    <button class="button button_colored">Get started</button>
-                    <a href="#" class="link_button">
-                        <span class="ico ico_play"> </span> Watch the video
-                    </a>
+
+
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+                <img src="./photo.jpg" alt="avatar" class="avatar">
+                <div class="section-title title-main">
+                    <h1 >VLADISLAV KOZLOV</h1>
+                    <h3> Student Rolling Scopes School</h3>
                 </div>
-            </div>
+                
+            </section>
+            
+            <section class="section" id="contacts"> 
+                <h2 class="section-title">Contacts</h2>
+                <ul>
+                    <li>Belarus, Gomel</li>
+                    <li>Email: <a href="mailto:vladyamba@inbox.ru">vladyamba@inbox.ru</a></li>
+                    <li>Github: <a href="https://github.com/Vladyamb">Vladyamb</a></li>
+                    <li>Telegram: <a href="https://t.me/vladyamb">@vladyamb</a> </li>
+                </ul>
+            </section>
+
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.Здесь будет текст, но позже.</p>
+            </section>
+
+            <section class="section" id="skills"> 
+                <h2 class="section-title">Skills</h2>
+                <ul class="">
+                    <li> Web-development:<span> HTML5, CSS3</span></li>
+                    <li>Version control:<span> GIT, Github</span></li>
+                    <li>Graphics:<span> Figma</span></li>
+                </ul>
+            </section>
+
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre>
+const square = (num) => {
+    return num * num;
+    };
+                </pre>
+            </section>
+
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul>
+                    <li>Code-basics:<span> HTML для начинающих</span></li>
+                    <li>Code-basics:<span> CSS для начинающих</span></li>
+                    <li>Code-basics:<span> JavaScript для начинающих</span></li>
+                </ul>
+            </section>
+
+            <section class="section" id="projects"> 
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li>Временно нету</li>
+                    <li>Временно нету</li>
+                    <li>Временно нету</li>
+                </ul>
+            </section>
+
+            <section class="section" id="education"> 
+                <h2 class="section-title">Education</h2>
+                <p>Francisk Skorina Gomel State University</p>
+            </section>
+
+            <section class="section" id="english"> 
+                <h2 class="section-title">English</h2>
+                <p> А1 (Beginner)</p>
+            </section>
         </div>
-    </section>
-    <section class="tools">
-        <div class="wrapper">
-            <h2> We design tools to unveil your superpowers </h2>
-            <div class="layout-4-column"> 
-                <div class="tool">
-                    <div class="tool__icon">
-                        <span class="icon_square icon_square_lilium"></span>
-                    </div>
-                    <h4>First click tests</h4>
-                    <p> While most people enjoy casino gambling</p>
-                </div>
-            </div>
-            <div class="tools-button">
-                <button class="button button_colored">Sign up Now</button>
-            </div>
-        </div>
-    </section>
-    <section class="strategies">
-    <div class="wrapper">
-        <h2>Marketing strategies</h2>
-        <p class="strategies__descriptions"> Join 40000+ other marketers and get proven strategeis on email</p>
-        <div class="strategeis__tags">
-            <span class=" tag tag_selected">All</span>
-            <span class=" tag tag_bordered">Art</span>
-        </div>
-        <div class="layout-3-column">
-            <div class="strategy block-shadowed">
-                <img src="img\strategeis\tetka.jpg" alt=""
-                <h3>Increasing Prosperity With Thinking</h3>
-                <div class="strategies__tags">
-                    <span class="tag tag_colored">Art</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="about-us">
-        <div class="wrapper">
-            <h2>About Us</h2>
-            <p> Your About Us page is vital</p>
-            <div class="layout-3-column">
-                <div class="employee block-shadowed">
-                    <div class="employee__connent">
-                        <h5> The Design Thinking Superpowers</h5>
-                        <p class="employer_title">Product Manager</p>
-                        <a href="mailto:vladyama@inbox.ru"> vladyama@inbox.ru</a>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </section>
-    <section class="Contact-us">
-        <div class="wrapper">
-            <h2>Contact Us</h2>
-            <div class="layout-2-column">
-                <div class="content-us__content">
-                    <p>My name is Gogi. I am eight. I go to school. I am a pupil. I am a pupil of the second form. I live in Moscow. I have got a big and friendly family. And I have got a lot of friends.</p>
-                    <p>
-                            <span class="ico ico_phone"></span> <a href="tel: +375111111111"> +375111111111</a>
-                    </p>
-                    <p>
-                            <span class="ico ico_letter"></span> <a href="mail: vladyamba@inbox.ru"> vladyamba@inbox.ru</a>
-                    </p>
-                </div>
-                <div class="content-us__form">
-                    <form action method="post">
-                        <div class="layout-2-column">
-                            <input type="text" name="name" placeholder="Your name">
-                            <input type="email" name="email" placeholder="Your email">
-                        </div>
-                        <textarea name="Questions" cols="30" rows="10" > </textarea>
-                        <div class="contact-us__button">
-                            <button type="submit" class="button button_colored">Sent</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
+
+
     <footer class="footer">
-        <div class="wrapper">
-            <div class="layout-4-column">
-                <a href="#" class="logo">Logo</a>
-                <div class="footer-navigation">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-navigation__links">
-                        <li><a href="#">About Us</a> </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container footer-container">
+            <span> @2022 <a href="https://github.com/Vladyamb">Vladyamb</a> </span>
+            <a href="https://rs.school/js/" class="logo-rss"></a>
         </div>
     </footer>
 </body>
