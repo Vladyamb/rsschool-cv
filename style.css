@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  margin: 20; padding: 20;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0c0c0cfd;
+}
+
+.section-title {
+  font-size: 20px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 10px;
+    color: #0729e6;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.header{
+  background-color:#cbf9b5;
+}
+
+
+.main{
+  display: block;
+}
+
+
+.footer{
+  background-color:#cbf9b5;
+}
+
+
+
+.logo-rss {
+  width: 125px;
+  height: 47px;
+  background-image: url("./rs_school_js.svg");
+}
+
+
+.container {
+  max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    min-height: 50px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+
+.avatar{
+  border-radius: 30%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-main {
+position: relative;
+font-size: 24px;
+}
+
+.section {
+  width: 50%;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 15px solid #d4fe68;
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
