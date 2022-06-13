@@ -1,2 +1,2 @@
 
-## https://Vladyamb.github.io/rsschool-cv/
+## https://Vladyamb.github.io/rsschool-cv-html/
